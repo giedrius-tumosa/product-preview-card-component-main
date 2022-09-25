@@ -31,6 +31,7 @@ img {
 
 :root {
   /* Colors */
+
   --clr-primary-cream: hsl(30, 38%, 92%);
   --clr-primary-dark: hsl(158, 36%, 37%);
   --clr-primary-dark-active: hsl(159, 42%, 26%);
@@ -41,6 +42,7 @@ img {
   --clr-bg: hsl(225, 22%, 93%);
 
   /* Fonts */
+
   --ff-body: "Montserrat", sans-serif;
   --ff-headings: "Fraunces", serif;
   --fs-body: 0.8rem;
@@ -51,29 +53,27 @@ img {
   --line-height: 1.7;
 
   /* General */
+
   --padding-desktop: 30px;
   --padding-mobile: 25px;
 }
 
 /* || TYPOGRAPHY */
 
-.info__product-name,
-.price__previous,
-.info__description {
+.body-font {
   font-family: var(--ff-body);
   font-size: var(--fs-body);
   color: var(--clr-secondary-dark-200);
   line-height: var(--line-height);
 }
+.heading-font {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-headings);
+}
 .info__product-name {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: var(--fw-body);
-}
-.info__heading,
-.price__current {
-  font-family: var(--ff-headings);
-  font-size: var(--fs-headings);
 }
 .price__current {
   color: var(--clr-primary-dark);
@@ -96,7 +96,8 @@ img {
   background-color: var(--clr-primary-dark-active);
 }
 
-/* || LAYOUT */
+/* || LAYOUT AND GENERAL STYLING*/
+
 body {
   display: flex;
   justify-content: center;
@@ -123,7 +124,9 @@ body {
 .card__picture img {
   border-radius: 15px 15px 0 0;
 }
+
 /* Price segment */
+
 .info__price {
   display: flex;
   gap: 1rem;
@@ -131,7 +134,9 @@ body {
 .price__previous {
   align-self: center;
 }
+
 /* Button segment */
+
 .info__button {
   background-color: var(--clr-primary-dark);
   display: block;
@@ -147,9 +152,14 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
+/* Attribution */
+
 .attribution {
   margin-bottom: -15px;
 }
+
+/* || MEDIA QUERIES */
 
 @media screen and (min-width: 542px) {
   .card {
